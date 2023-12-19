@@ -1,0 +1,1 @@
+C:\Sotiris\kafka\3.5.1\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
