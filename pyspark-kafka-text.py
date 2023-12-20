@@ -1,15 +1,8 @@
-import os
-os.environ['PYSPARK_SUBMIT_ARGS'] = '--packages org.apache.spark:spark-streaming-kafka-0-10_2.12:3.3.0,org.apache.spark:spark-sql-kafka-0-10_2.12:3.3.0 pyspark-shell'
-
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import explode
 from pyspark.sql.functions import split
 
-# Create a Spark session
-#   config("spark.jars.packages", "org.apache.spark:spark-sql-kafka-0-10_2.12:3.3.0,org.apache.kafka:kafka-clients:3.3.0"). \
-jars = os.getcwd() + "/jars/spark-sql-kafka-0-10_2.12-3.3.0.jar" + "," + os.getcwd() + "/jars/kafka-clients-3.3.0.jar"
-# config("spark.jars", jars).\
-    
+
 spark = SparkSession.builder.master("local").\
   appName("kafka-example").getOrCreate()
   

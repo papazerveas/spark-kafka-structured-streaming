@@ -1,0 +1,12 @@
+confluent-kafka
+protobuf
+
+#kafka-python
+# pyspark
+# pyspark[sql]
+# pyspark[pandas_on_spark]
+# plotly
+# pyspark[connect]
+# pyarrow>=4.0.0
+# pandas>=1.0.5
+# numpy>=1.15
