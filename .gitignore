@@ -9,7 +9,8 @@ logs
 .databricks
 !.databrickscfg
 
-# Byte-compiled / optimized / DLL files
+# Byte-copiled / optimized / DLL files
+
 __pycache__/
 *.py[cod]
 *$py.class

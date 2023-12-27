@@ -44,11 +44,14 @@ bins\kafka-create-producer.bat
 spark-submit pyspark-kafka-text.py
 ```
 
-
 ### protobuf
 
 ```sh
-    protoc -I=protobuf --python_out=protobuf protobuf/addressbook.proto
+    scoop install protobuf
+    protoc -I=confluent/protobuf --python_out=confluent/protobuf addressbook.proto
+
+    -I = input path
+  --python_out=OUT_DIR        Generate Python source file.
 ```
 
 ## produce - consume - protobuf

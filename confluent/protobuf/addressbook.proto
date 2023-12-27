@@ -1,6 +1,6 @@
 syntax = "proto2";
 
-package tutorial;
+package protobuf_example;
 
 message Person {
   optional string name = 1;
